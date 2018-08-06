@@ -46,7 +46,7 @@ class ImgScrapy:
                         raise
 
                 # get_img_link 함수를 실행해 소스링크 리스트를 받음
-                self.linkList = ImgScrapy.get_img_link()
+                self.linkList = ImgScrapy.get_img_link(self.searchWord[i])
 
                 # Img Download
                 for j in range(len(self.linkList)):
