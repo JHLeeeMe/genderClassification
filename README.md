@@ -19,7 +19,7 @@ FaceDetection.py => 수집된 데이터 얼굴부분만 crop, resize (feat. open
     python3 FaceDetection.py
 <br>
 
-### model graph
+## model graph
 <br>
 
 ![1_uuyc126ru4mntwwckebctw 2x](https://user-images.githubusercontent.com/35649392/43726611-9839f3ae-99da-11e8-8d91-49774e1878ea.png)
@@ -27,8 +27,9 @@ FaceDetection.py => 수집된 데이터 얼굴부분만 crop, resize (feat. open
 ![gender_cnn](https://user-images.githubusercontent.com/35649392/43726804-15f8bb86-99db-11e8-990e-5fccadd3cdce.png)
 
 
-### model code
+## model code
 <br>
+
     X = tf.placeholder(tf.float32, [None, 80 * 80])
     X_img = tf.reshape(X, [-1, 80, 80, 1])
     Y = tf.placeholder(tf.float32, [None, 1])
@@ -82,7 +83,7 @@ FaceDetection.py => 수집된 데이터 얼굴부분만 crop, resize (feat. open
         logits = tf.matmul(L5, W6) + b6
         hypothesis = tf.sigmoid(logits)
 
-### accuracy & cost
+## accuracy & cost
 <br>
 
 ![accuracy_cost](https://user-images.githubusercontent.com/35649392/43726947-94badb5c-99db-11e8-8ba1-b43bd7ba3e91.png)
