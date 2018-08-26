@@ -15,8 +15,11 @@ FaceDetection.py => 수집된 데이터 얼굴부분만 crop, resize (feat. open
     selenium
     
 ## how to run
-    python3 ImgScrapy.py searchWord_1 [searchWord_2] ... [searchWord_N]
-    python3 FaceDetection.py
+    1) image scrap
+        python3 ImgScrapy.py searchWord_1 [searchWord_2] ... [searchWord_N]
+        
+    2) image preprocessing
+        python3 FaceDetection.py
 <br>
 
 ## model graph
