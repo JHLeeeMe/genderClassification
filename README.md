@@ -86,7 +86,7 @@ FaceDetection.py => 수집된 데이터 얼굴부분만 crop, resize (feat. open
         logits = tf.matmul(L5, W6) + b6
         hypothesis = tf.sigmoid(logits)
 
-## accuracy & cost
+## accuracy & cost (tensorBoard)
 <br>
 
 ![accuracy_cost](https://user-images.githubusercontent.com/35649392/43726947-94badb5c-99db-11e8-8ba1-b43bd7ba3e91.png)
