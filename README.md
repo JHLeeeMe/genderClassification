@@ -44,7 +44,7 @@ FaceDetection.py => 수집된 데이터 얼굴부분만 crop, resize (feat. open
         L1 = tf.nn.max_pool(L1, ksize=[1, 2, 2, 1], strides=[1, 2, 2, 1], padding='SAME')
 
     with tf.name_scope('L2') as scope:
-        # one by one convolution for dimension reduction
+        # one by one convolution for dimensionality reduction
         _W2 = tf.Variable(tf.random_normal([1, 1, 32, 5]))
         _L2 = tf.nn.conv2d(L1, _W2, strides=[1, 1, 1, 1], padding='SAME')
 
@@ -54,7 +54,7 @@ FaceDetection.py => 수집된 데이터 얼굴부분만 crop, resize (feat. open
         L2 = tf.nn.max_pool(L2, ksize=[1, 2, 2, 1], strides=[1, 2, 2, 1], padding='SAME')
 
     with tf.name_scope('L3') as scope:
-        # one by one convolution for dimension reduction
+        # one by one convolution for dimensionality reduction
         _W3 = tf.Variable(tf.random_normal([1, 1, 64, 5]))
         _L3 = tf.nn.conv2d(L2, _W3, strides=[1, 1, 1, 1], padding='SAME')
 
@@ -64,7 +64,7 @@ FaceDetection.py => 수집된 데이터 얼굴부분만 crop, resize (feat. open
         L3 = tf.nn.max_pool(L3, ksize=[1, 2, 2, 1], strides=[1, 2, 2, 1], padding='SAME')
 
     with tf.name_scope('L4') as scope:
-        # one by one convolution for dimension reduction
+        # one by one convolution for dimensionality reduction
         _W4 = tf.Variable(tf.random_normal([1, 1, 128, 5]))
         _L4 = tf.nn.conv2d(L3, _W4, strides=[1, 1, 1, 1], padding='SAME')
 
