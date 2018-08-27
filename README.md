@@ -31,7 +31,6 @@ FaceDetection.py => 수집된 데이터 얼굴부분만 crop, resize (feat. open
 
 
 ## model code
-<br>
 특이사항: one by one convolution (is used in Google Inception Module)
 
     X = tf.placeholder(tf.float32, [None, 80 * 80])
