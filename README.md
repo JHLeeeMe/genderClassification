@@ -29,7 +29,7 @@ FaceDetection.py => 수집된 데이터 얼굴부분만 crop, resize (feat. open
 ![gender_cnn](https://user-images.githubusercontent.com/35649392/43726804-15f8bb86-99db-11e8-990e-5fccadd3cdce.png)
 
 
-## model code
+## CNN model code
 특이사항: one by one convolution (is used in Google Inception Module)
 
     X = tf.placeholder(tf.float32, [None, 80 * 80])
