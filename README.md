@@ -1,6 +1,6 @@
 
 # imgClassification
-남녀 얼굴사진을 학습시켜 구분 (tensorflow)
+남녀 얼굴사진을 학습시켜 구분 (tensorflow)  
 ImgScrapy.py => data 수집  
 FaceDetection.py => 수집된 데이터 얼굴부분만 crop, resize (feat. openCV)  
 
