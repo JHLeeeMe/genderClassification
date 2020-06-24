@@ -21,7 +21,7 @@ class ImgScrapy:
         import socket
         socket.setdefaulttimeout(10)
 
-        # 파일 실행시 아규먼트값(검색어)을 하나이상 넘겨줬는지 판단
+        # 파일 실행시 검색어를 하나이상 넘겨줬는지 판단
         # 아규먼트를 넘겨주지 않았을 때 len(sys.argv)의 값은 1 이다 (sys.argv[0] == imgScrapy.py)
         if len(sys.argv) < 2:
             print('Usage: python3 imgScrapy.py searchWord_0 ... searchWord_N')
