@@ -1,7 +1,7 @@
 
-# imgClassification
+# genderClassification
 남녀 얼굴사진을 학습시켜 구분 (tensorflow)  
-ImgScrapy.py => data 수집  
+ImgScraper.py => data 수집  
 FaceDetection.py => 수집된 데이터 얼굴부분만 crop, resize (feat. openCV)  
 
 ## requirements
@@ -15,7 +15,7 @@ FaceDetection.py => 수집된 데이터 얼굴부분만 crop, resize (feat. open
     
 ## how to run
     1) image scrap
-        python3 ImgScrapy.py searchWord_1 [searchWord_2] ... [searchWord_N]
+        python3 ImgScraper.py searchWord_1 [searchWord_2] ... [searchWord_N]
         
     2) image preprocessing
         python3 FaceDetection.py
