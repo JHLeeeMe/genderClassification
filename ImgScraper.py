@@ -9,7 +9,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
 
-class ImgScrapy:
+class ImgScraper:
 
     def __init__(self):
         self.searchWord = []
@@ -22,9 +22,9 @@ class ImgScrapy:
         socket.setdefaulttimeout(10)
 
         # 파일 실행시 검색어를 하나이상 넘겨줬는지 판단
-        # 아규먼트를 넘겨주지 않았을 때 len(sys.argv)의 값은 1 이다 (sys.argv[0] == imgScrapy.py)
+        # 아규먼트를 넘겨주지 않았을 때 len(sys.argv)의 값은 1 이다 (sys.argv[0] == ImgScraper.py)
         if len(sys.argv) < 2:
-            print('Usage: python3 imgScrapy.py searchWord_0 ... searchWord_N')
+            print('Usage: python3 ImgScraper.py searchWord_0 ... searchWord_N')
             print('end...')
             sys.exit()
         else:
@@ -46,7 +46,7 @@ class ImgScrapy:
                         raise
 
                 # get_img_link 함수를 실행해 소스링크 리스트를 받음
-                self.linkList = ImgScrapy.get_img_link(self.searchWord[i])
+                self.linkList = ImgScraper.get_img_link(self.searchWord[i])
 
                 # Img Download
                 for j in range(len(self.linkList)):
@@ -115,5 +115,5 @@ class ImgScrapy:
 
 if __name__ == '__main__':
     print('start...')
-    ImgScrapy().main()
+    ImgScraper().main()
     print('end...')
